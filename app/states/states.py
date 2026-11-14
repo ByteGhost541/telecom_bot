@@ -21,19 +21,16 @@ class ConfimPassword(StatesGroup):
     confim_password_for_unblock = State()
 
 
-# Примечание: Состояния FSM для обновления телефона, имени и описания оператора.
 class UpdateProfile(StatesGroup):
     new_phone = State()
     new_name = State()
     new_operator_desc = State()
 
 
-# Примечание: Состояния FSM для добавления нового вопроса и ответа в FAQ администратором.
 class AddFaq(StatesGroup):
     question = State()
     answer = State()
 
 
-# Примечание: Состояние FSM для ввода текста отзыва после выставления оценки оператору.
 class LeaveReview(StatesGroup):
     review_text = State()
