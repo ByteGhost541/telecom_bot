@@ -111,7 +111,6 @@ class Faq(Base):
 async def init_db():
     async with engine.begin() as conn:
         await conn.run_sync(Base.metadata.create_all)
-        # Безопасное добавление колонки work_seconds в существующую таблицу (если она была создана ранее)
         try:
             await conn.execute(text("ALTER TABLE operators ADD COLUMN IF NOT EXISTS work_seconds INTEGER DEFAULT 0"))
         except Exception:
