@@ -37,7 +37,7 @@
 
 1. Клонируйте репозиторий:
    ```bash
-    git clone https://github.com/Python_Legend_Developer/telecom-bot.git
+    git clone https://github.com/ByteGhost541/telecom-bot.git
 
 2. Создайте и активируйте виртуальное окружение:
     ```Bash
